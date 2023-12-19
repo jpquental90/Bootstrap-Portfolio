@@ -6,63 +6,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Joana Quental // Web Developer</title>
+
+<!-- links to libraries/css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <!-- main logo / nav -->
+  <!-- main title / nav -->
   <header>
-    <h1>Joana Quental</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-        <li><a href="http://www.linkedin.com/in/joana-quental-31611a293" target="_blank">Resume</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary header">
+      <div class="container-fluid header">
+        <a class="navbar-brand title" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu-options" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
-    <div id="subtitle">
-      <h2>Web Developer in Training</h2>
-    </div>
-  </section>
-
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <div><h2>About <br>Me</h2></div>
-      <div class="section-content about-content">
-        <div><img src="../starter/images/profile-pic.jpg" alt="profile picture" height="300"></div>     
-        <div id="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maiores reprehenderit aperiam recusandae ut eum, magnam necessitatibus, magni, non culpa incidunt optio aspernatur enim est blanditiis quas eos. Illo, excepturi.</div>
-      </div>
-    </section>
-
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <div><h2>Work</h2></div>
-      <div class="section-content work-content">
-        <div class="top-row work-element">
-          <a href="https://joanapq.github.io/"><img src="./images/project1.png" alt="screenshot of project 1"></a>
-          <p class="project-title">Project 1: Murder Mystery</p>
+  <div class="p-5 mb-4 bg-body-tertiary rounded-3 jumbotron">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Joana Quental</h1>
+      <br>
+      <div class="row">
+        <div class="col-sm-5 col-md-4 col-lg-2">
+          <img src="./images/profile-pic.jpg" class="img-fluid img-thumbnail profile-pic text-right" alt="profile picture">
         </div>
-        <div class="left-square work-element"><p class="project-title">Project 2</p></div>
-        <div class="right-square work-element"><p class="project-title">Project 3</p></div>
+        <div class="col-sm-7 col-md-8 col-lg-10">
+          <p class="profile-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum id quod facilis quo repellat delectus inventore distinctio atque quas fuga iste error repudiandae dolorem laboriosam, sint et explicabo minima reprehenderit.</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- contact -->
-    <section class="page-section" id="contact">
-      <div><h2>Contact <br>Me</h2></div>
-      <div class="section-content contact-me">
+    <!-- work section-->
+  <div class="container-fluid text-center" id="work">
+    <h1 class="display-5 fw-bold">Work</h1>
+    <div class="row">
+      <div class="col card" style="width: 100%;">
+        <img src="./images/project1.png" alt="screenshot of project 1">
+        <div class="card-body">
+          <h5 class="card-title">Project 1: Murder Mystery</h5>
+          <p class="card-text">A murder mystery game using logic.</p>
+          <a href="#" class="btn btn-info">Visit Project</a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+
+      <div class="col card" style="width: 100%;">
+        <img src="./images/02-portfolio-2.jpg" class="card-img-top" alt="screenshot of project 2">
+        <div class="card-body">
+          <h5 class="card-title">Project 2</h5>
+          <p class="card-text">A description of the project.</p>
+          <a href="#" class="btn btn-info">Visit Project</a>
+        </div>
+      </div>
+
+      <div class="col card" style="width: 100%;">
+        <img src="./images/02-portfolio-3.jpg" class="card-img-top"  alt="screenshot of project 3">
+        <div class="card-body">
+          <h5 class="card-title">Project 3</h5>
+          <p class="card-text">A description of the project.</p>
+          <a href="#" class="btn btn-info">Visit Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+
+  <div class="row">
+    <!-- skills section-->
+  <div class="p-5 mb-4 bg-body-tertiary rounded-3 jumbotron col skills" id="skills">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Skills</h1>
+      <p class="col-md-8 fs-4">Gaining proficiency in numerous marketable technologies, including HTML, CSS, JavaScript, Node.js, and React. </p>
+    </div>
+  </div>
+  <br>
+    <!-- about me -->
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3 jumbotron col about-me" id="about">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">About Me</h1>
+        <p class="col-md-8 fs-4">Stuff about me.</p>
         <div class="contact-method">+44 7532271524</div>
         <div class="contact-method"><a href="mailto:joanapquental@gmail.com">joanapquental@gmail.com</a></div>
         <div class="contact-method"><a href="https://github.com/jpquental90" target="_blank">GitHub</a></div>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
+    <footer>
+      <p class="text-center">Footer information.</p>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
